@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electric Vehicles.in</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .drawer-content {
+          display: none;
+        }
+      </style>
+      <script>
+        function toggleDrawer(drawerId) {
+          var drawer = document.getElementById(drawerId);
+          if (drawer.style.display === 'none') {
+            drawer.style display = 'block';
+          } else {
+            drawer.style.display = 'none';
+          }
+        }
+    
+        // Function to toggle visibility of nested list items
+        function toggleNestedListItems(listId) {
+          var list = document.getElementById(listId);
+          if (list.style.display === 'none') {
+            list.style.display = 'block';
+          } else {
+            list.style.display = 'none';
+          }
+        }
+      </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('.drawer-button').click(function () {
+            $(this).next('.drawer').toggleClass('active');
+          });
+        });
+        
+        // Function to check internet connectivity and show popup if not connected
+        function checkInternetConnection() {
+            if (!navigator.onLine) {
+                alert("Please connect to the internet before using the website.");
+            }
+        }
+
+        // Call the function when the page loads
+        window.onload = checkInternetConnection;
+        
+        // Function to check internet connectivity and show popup if not connected
+        function checkInternetConnection() {
+            if (!navigator.onLine) {
+                alert("Please connect to the internet before using the website.");
+            }
+        }
+
+        // Call the function when the page loads
+        window.onload = checkInternetConnection;
+
+        document.addEventListener('DOMContentLoaded', function () {
+  var goToTopButton = document.getElementById('go-to-top');
+
+  // Show or hide the "Go to Top" button based on scroll position
+  window.addEventListener('scroll', function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      goToTopButton.style.display = 'block';
+    } else {
+      goToTopButton.style.display = 'none';
+    }
+  });
+
+  // Smooth scroll to the top when the button is clicked
+  goToTopButton.addEventListener('click', function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+});
+
+    
+      </script>
+      
+</head>
+<body>
+  <button id="go-to-top">Go to Top</button>
+    <header>
+        <h1>Electric Vehicles </h1>
+    </header>
+
+    <nav>
+        <div class="scrollable-nav">
+            <ul class="navtab">
+                <li><a href="#section1">Introduction</a></li>
+                <li><a href="#section2">Overview of Electric Vehicles</a></li>
+                <li><a href="#section3">History and Evolution</a></li>  
+                <li><a href="#section4">Environmental Impact</a></li>
+                <li><a href="#section5">Technology Behind Electric Vehicles</a></li>
+                <li><a href="#section6">Popular Electric Vehicle Models</a></li>
+                <li><a href="#section7">Challenges and Limitations</a></li>
+                <li><a href="#section8">Future of Electric Vehicles</a></li>
+                <li><a href="#section9">Conclusion</a></li>
+                <li><a href="#section11">Contact </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <h2>Introduction</h2>
+            <div class="content-container">
+                <div class="text-content">
+                    <p>In recent years, the world has witnessed a significant shift in the automotive industry
+                        with the emergence and rapid growth of electric vehicles (EVs). Electric vehicles, or 
+                        EVs, have gained immense popularity as a more sustainable and environmentally friendly
+                        alternative to traditional internal combustion engine (ICE) vehicles. This paradigm 
+                        shift has been driven by the urgent need to reduce greenhouse gas emissions, combat 
+                        air pollution, and promote a more sustainable mode of transportation.
+                    </p>
+                    <p>Our project on electric vehicles is designed to explore and shed light on various aspects
+                        of this transformative technology. Electric vehicles use electricity stored in batteries
+                        to power an electric motor, eliminating the need for gasoline or diesel fuel. This shift
+                        in propulsion technology has far-reaching implications, not only for the automotive industry
+                        but also for the environment, energy sector, and urban planning. The project aims to provide
+                        a comprehensive understanding of the following key areas:
+                    </p>
+                </div>
+                <img src="https://datamyte.com/wp-content/uploads/2022/06/What-is-an-EV-Introduction-to-Electric-Vehicle.jpg" alt="Electric Vehicle" class="right-image">
+            </div>
+        </section>
+        
+
+        <section id="section2">
+            <h2>Overview of Electric Vehicles</h2>
+            <p>Electric vehicles (EVs) are automobiles powered by electricity stored in rechargeable batteries or other energy storage systems, such as fuel cells. They offer an alternative to traditional internal combustion engine (ICE) vehicles that run on gasoline or diesel. Here's a brief overview of electric vehicles:</p>
+            <img src="https://afdc.energy.gov/files/vehicles/electric-high-res.jpg" alt="BEVs" style="max-width: 50%; height: auto; display: block; margin: 0 auto;">
+            <p>
+                <ol>
+                    <li>Battery Electric Vehicles (BEVs): BEVs rely solely on electricity stored in rechargeable batteries to power an electric motor. They produce zero tailpipe emissions and are considered environmentally friendly.</li>
+                    <li>Plug-In Hybrid Electric Vehicles (PHEVs): PHEVs combine an electric motor and an internal combustion engine. They can operate in all-electric mode for a limited range and switch to gasoline when the battery is depleted.</li>
+                    <li>Hybrid Electric Vehicles (HEVs): HEVs have an internal combustion engine and an electric motor that work together to improve fuel efficiency and reduce emissions. They can't be plugged in for recharging but use regenerative braking to charge the battery.</li>
+                    <li>Fuel Cell Electric Vehicles (FCEVs): FCEVs use hydrogen fuel to generate electricity through a chemical reaction in a fuel cell. They produce no tailpipe emissions, only emitting water vapor.</li>
+                    <li>Electric Vehicle Benefits: EVs are energy-efficient, produce lower or no emissions, reduce dependence on fossil fuels, and have lower operating costs. They also offer quieter and smoother rides.</li>
+                </ol>
+            </p>
+        </section>
+
+        <section id="section3">
+            <h2>History and Evolution</h2>
+            <p>The history and evolution of electric vehicles (EVs) date back to the early 19th century. While they have gained significant attention in recent years, electric vehicles have a long and fascinating history. Here is an overview of their development:
+             <br><br><br>
+             <aside><p>The first mass-produced electric car, the Baker Electric, was introduced in the early 1900s and was popular among affluent individuals, including some members of the U.S. elite, such as Thomas Edison and John D. Rockefeller.</p></aside>
+             <img src="https://fullycharged.show/wp-content/uploads/2019/05/Banner-ev-timeline.jpg" alt="History of EV" width="650">
+             <br><br>
+             <ol>
+                <li>Early Electric Vehicle Experiments:
+                <ul>
+                    <li>1820s: The first known electric vehicle prototype was built by Hungarian engineer Ányos Jedlik, who created a simple model using a simple electric motor powered by a voltaic cell.</li>
+                </ul>
+             </li>
+             <li>Development of Practical Electric Vehicles:
+                <ul>
+                    <li>1830s-1850s: Various inventors, including Thomas Davenport and Robert Anderson, continued to work on electric vehicles. Anderson's vehicle was one of the first to be practical for short trips.</li>
+                    <li>1879: Thomas Edison, the inventor of the light bulb, also experimented with electric cars, but his alkaline battery was not commercially successful.</li>
+                </ul>
+             </li>
+             <li>Electric Taxis and Early Commercial Use:
+                <ul>
+                    <li>Late 19th century: Electric taxis and delivery vehicles began to appear in major cities like London and New York due to their quiet and clean operation.</li>
+                </ul>
+             </li>
+             <li>Decline and the Rise of Internal Combustion Engine Vehicles:
+                <ul>
+                    <li>Early 20th century: The gasoline-powered internal combustion engine (ICE) gained dominance due to improvements in range and the availability of fossil fuels. Electric vehicles faced competition from ICE vehicles, which had longer driving ranges and faster refueling.</li>
+                </ul>
+             </li>
+             <li>Electric Vehicles in the 20th Century:
+                <ul>
+                    <li>1970s: Rising environmental concerns and oil crises renewed interest in electric vehicles, leading to some experimental models.</li>
+                    <li>1990s: The General Motors EV1 and Toyota RAV4 EV were among the first modern electric vehicles, but they were only available for lease and had limited production runs.</li>
+                </ul>
+             </li>
+
+</ol>
+            </p>
+        </section>
+
+        <section id="section4">
+            <h2>Environmental Impact</h2>
+            <p>Electric vehicles (EVs) have gained popularity as a more environmentally friendly alternative to traditional internal combustion engine vehicles (ICEVs). However, the environmental impact of electric vehicles is not entirely benign and can vary depending on several factors. Here's an overview of the key environmental considerations:</p>
+            <br><br><br>
+            <aside><p>In over a year, just one electric car on the roads can save an average 1.5 million grams of CO2.</p></aside>
+            
+            <img src="https://lh5.googleusercontent.com/g0NOh1L4kzQRHYoL1So8x15ziPLh35PqCiTRsbPkm3KPl7Uc1k9PEc0dkrlBPbv0ALGTP-tX37p67qOTsNr1wsaffvIj-VAjiEJIUYjQwp3ol1wH75BUmEBhixHSyGGkmEf-wOzg" alt="Environmental Impact" width="650">
+            <img src="https://ars.els-cdn.com/content/image/1-s2.0-S258900422101470X-fx1.jpg" alt="Environmental Impact" width="360" style="float: right; margin-left: 20px; margin-top: -200px; margin-right: 70px;">
+            <br><br>
+            <ol id="environmental-impact-list">
+            <li>
+            <span class="drawer-button">Greenhouse Gas Emissions</span>
+                
+            <ul class="drawer">
+                    <li>Lower Tailpipe Emissions: EVs produce no tailpipe emissions, which means they do not release carbon dioxide (CO2), nitrogen oxides (NOx), or other harmful pollutants directly into the air during operation. This can significantly reduce local air pollution in urban areas.</li>
+                    <li>Grid Electricity Source: The environmental benefits of EVs depend on the source of the electricity used to charge them. If the electricity is generated from fossil fuels, such as coal or natural gas, the carbon footprint of EVs may not be significantly lower than that of ICEVs. However, as the electricity grid shifts toward cleaner energy sources like wind, solar, and nuclear power, the carbon emissions associated with EVs decrease.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="drawer-button">Battery Production</span>
+               
+                <ul class="drawer">
+                    <li>Manufacturing Impact: The production of lithium-ion batteries used in EVs can have a high environmental impact due to the extraction of raw materials (like lithium and cobalt), energy-intensive manufacturing processes, and transportation. Efforts to reduce these impacts are ongoing, including recycling and the development of more sustainable battery chemistries.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="drawer-button">Battery Life and Recycling</span>
+                
+                <ul class="drawer">
+                    <li>Battery Degradation: Over time, EV batteries degrade, which can affect the vehicle's performance and range. Some batteries may need to be replaced, which can be costly and have environmental implications.</li>
+                    <li>Recycling and Repurposing: Recycling and repurposing used EV batteries can reduce waste and environmental impact. These batteries can still be valuable for stationary energy storage applications even after they are no longer suitable for EV use.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="drawer-button">Energy Efficiency</span>
+               
+               <ul class="drawer">
+                    <li>EVs are typically more energy-efficient than ICEVs due to their electric drivetrains. They convert a higher percentage of the energy from the grid to vehicle movement, which reduces overall energy consumption and associated environmental impacts.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="drawer-button">Other Environmental Impacts</span>
+                
+               <ul class="drawer">
+                    <li>Mining and Resource Extraction: The production of materials used in EVs, such as rare earth metals and lithium, can have negative environmental impacts when not managed sustainably.</li>
+                    <li>Charging Infrastructure: Expanding EV charging infrastructure requires resources and can impact local ecosystems, especially in more remote or pristine areas.</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <span class="drawer-button">Noise Pollution</span>
+               <ul class="drawer">
+                    <li>EVs are quieter than traditional vehicles, which can reduce noise pollution in urban areas. However, this can also pose safety concerns for pedestrians, leading to regulations requiring artificial sound generators in EVs.</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+        <section id="section5">
+            <h2>Technology Behind Electric Vehicles</h2>
+            <p>
+              The technology behind electric vehicles (EVs) involves several key components and systems that work together to power and operate the vehicle. Here's an overview of the technology behind electric vehicles:
+            
+              <br><br><br>
+              <div-images style="display: flex; justify-content: space-between;">
+                <img src="https://www.currencytransfer.com/wp-content/uploads/2022/11/ev-2-edit.min_-770x403.jpg" alt="Technology Behind EV" width="350">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBYfFQLO_BRzHW9oeTPlVd9JLTqsi24SQIvA&usqp=CAU" alt="Technology Behind EV" width="350">
+                <img src="https://i.ytimg.com/vi/tJfERzrG-D8/maxresdefault.jpg" alt="Technology Behind EV" width="350">
+            </div>
+              <br><br>
+              <ol>
+                <li>Battery Pack:    The heart of an electric vehicle is its battery pack. This pack consists of a large number of individual lithium-ion or other advanced battery cells that store electrical energy. The capacity and energy density of these batteries have improved significantly over the years, allowing EVs to travel longer distances on a single charge. Various chemistries are used in these batteries, with lithium-ion being the most common.</li>
+               <br> <li>Electric Motor:    Electric vehicles are propelled by electric motors. There are different types of electric motors used in EVs, including AC induction motors, permanent magnet motors, and switched reluctance motors. These motors convert electrical energy from the battery into mechanical energy to drive the wheels.</li>
+                <br><li>Power Electronics:    Power electronics components, including inverters and converters, are used to manage the flow of electricity between the battery and the electric motor. They are responsible for converting the direct current (DC) from the battery into alternating current (AC) that the electric motor can use and controlling the speed and torque of the motor.</li>
+                <br><li>Charging System:    Electric vehicles can be charged through various methods, including standard household outlets (Level 1 charging), dedicated home charging stations (Level 2 charging), and high-power DC fast chargers (Level 3 charging). The charging system is equipped with safety features and communication protocols to ensure efficient and safe charging.</li>
+                <br><li>Battery Management System (BMS):    The BMS is responsible for monitoring and managing the individual cells within the battery pack. It ensures that the cells are charged and discharged uniformly, preventing overcharging or over-discharging, which can damage the battery and reduce its lifespan.</li>
+              <br><li>Thermal Management System: Maintaining the temperature of the battery pack is essential for its efficiency and longevity. A thermal management system controls the temperature within the battery pack to prevent overheating or extreme cold, which can affect performance and safety.</li>
+                <br><li>Safety Systems:    EVs are equipped with safety systems, including high-voltage cutoff mechanisms, multiple layers of insulation and shielding, and emergency shutdown procedures, to ensure the safety of occupants and first responders in the event of an accident or electrical malfunction.</li>
+            </ol>
+            </p>
+        </section>
+
+        <section id="section6">
+          <h2>Popular Electric Vehicle Models</h2>
+      
+          <h3>Popular electric vehicle models in INDIA:</h3>
+          
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <div class="nexon">
+                  <a href="https://cars.tatamotors.com/suv/nexon" ><img src="https://english.cdn.zeenews.com/sites/default/files/2023/09/08/1277471-2023-tata-nexon-ev-dynamic-shot.jpg" alt="Tata Nexon EV" width="350"></a>
+                  <p style="text-align: center; font-weight: bolder;">Tata Nexon EV</p>
+              </div>
+      
+              <div class="Tiago">
+                  <a href="https://tiagoev.tatamotors.com/"><img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Tiago-EV/6279/1676111344905/front-left-side-47.jpg" alt="Tata Tiago EV" width="350"></a>
+                  <p style="text-align: center; font-weight: bolder;">Tata Tiago EV</p>
+              </div>
+      
+              <div class="ZsEv">
+                  <a href="https://www.mgmotor.co.in/vehicles/mgzsev-electric-car-in-india"><img src="https://imgd.aeplcdn.com/0X0/n/cw/ec/110437/zs-ev-exterior-right-front-three-quarter-69.jpeg?isig=0&q=80" width="350"></a>
+                  <p style="text-align: center; font-weight: bolder;">MG Zs EV</p>
+              </div>
+      
+              <div class="Kiaev6">
+                  <a href="https://www.kia.com/in/our-vehicles/ev6/showroom.html?utm_source=google&utm_medium=sem&utm_campaign=search_ev6_brand&gad_source=1&gclid=Cj0KCQiAgK2qBhCHARIsAGACuznEGLatdPRDGRWJh4YTutbk3cdLJtYt6uLCMp5abuygWF0Pke4k7OkaAj7IEALw_wcB"><img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Kia/EV6/8947/1654159762071/front-left-side-47.jpg" alt="Kia Ev6" width="350"></a>
+                  <p style="text-align: center; font-weight: bolder;">Kia Ev6</p>
+              </div>
+      
+              <div class="EQS">
+                  <a href="https://www.mercedes-benz.co.in/passengercars/models/saloon/eqs/overview.html?gagcmid=GA_20685282715_153411964543_677718176090&gad_source=1&gclid=Cj0KCQiAgK2qBhCHARIsAGACuznf1Dz-_C-TpGr09J8yllB6Y8O8CnHUQRhcaYl7Rm5H_uENj6OWBm4aAhmWEALw_wcB&gclsrc=aw.ds"><img src="https://cdn.carbuzz.com/gallery-images/1600/983000/400/983407.jpg" alt="Mercedes-Benz EQS" width="350"></a>
+                  <p style="text-align: center; font-weight: bolder;">Mercedes-Benz EQS</p>
+              </div>
+      
+              <div class="BYD">
+                  <a href="https://www.byd.com/eu/car/atto3"><img src="https://imgd.aeplcdn.com/0X0/n/cw/ec/130183/atto-3-exterior-right-front-three-quarter-102.jpeg?isig=0&q=80" alt="BYD Atto3" width="350"></a>
+                  <p style="text-align: center; font-weight: bolder;">BYD Atto3</p>
+              </div>
+          </div>
+      </section>
+      
+
+
+      <section id="section7">
+        <h2>Challenges and Limitations</h2>
+        <h3>View the following videos to understand the Challenges and Limitations of EVs:</h3>
+    
+        <div class="video-container">
+            <div class="video nexon">
+                <iframe width="500" height="255" src="https://www.youtube.com/embed/CaoqWcHsE_g" frameborder="0" allowfullscreen></iframe>
+                <figcaption style="text-align: center;">EVs' Serious Problems That Carmakers Are Hiding</figcaption>
+            </div>
+    
+            <div class="video Tiago">
+                <iframe width="500" height="255" src="https://www.youtube.com/embed/9dnN82DsQ2k" frameborder="0" allowfullscreen></iframe>
+                <figcaption style="text-align: center;">Electric Vehicles' Battery Problem</figcaption>
+            </div>
+    
+            <div class="video ZsEv">
+                <iframe width="500" height="255" src="https://www.youtube.com/embed/Chp9VlSs25c" frameborder="0" allowfullscreen></iframe>
+                <figcaption style="text-align: center;">How green are electric cars? | It's Complicated</figcaption>
+            </div>
+    
+            <div class="video Kiaev6">
+                <iframe width="500" height="255" src="https://www.youtube.com/embed/z2HneqfZGsM" frameborder="0" allowfullscreen></iframe>
+                <figcaption style="text-align: center;">Electric Cars: Inconvenient Facts</figcaption>
+            </div>
+        </div>
+        <p style="font-weight: bold;">🛈For more info <a href="https://evchargingsummit.com/blog/challenges-facing-the-ev-industry-today/"> click here</a></p>
+    </section>
+
+    <section id="section8">
+      <h2>Future of Electric Vehicles</h2>
+      <p>
+          The future of electric vehicles (EVs) appears promising, with ongoing advancements in technology, policy support, and increasing consumer interest. Here are some key trends and aspects contributing to the future of electric vehicles:
+          <ol class="future">
+             <li> <a href="https://www.mrlcg.com/resources/blog/what-are-the-latest-developments-in-electric-vehicle-battery-technology-/#:~:text=Major%20advancements%20in%20EV%20battery%20technology&text=By%20replacing%20the%20liquid%20electrolyte,of%20solid%2Dstate%20battery%20research." target="_blank">Advancements in Battery Technology</a> </li>
+              <li> <a href="https://www.sciencedirect.com/science/article/pii/S187770581732653X" target="_blank">Increasing Range and Performance</a></li>
+              <li> <a href="https://afdc.energy.gov/fuels/electricity_infrastructure.html" target="_blank">Growing Charging Infrastructure</a></li>
+              <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S1361920921000663" target="_blank">Diversification of EV Models</a></li>
+              <li><a href="https://www.sciencedirect.com/science/article/pii/S1364032123003751" target="_blank">Technological Integration</a></li>
+              <li> <a href="https://www.frontiersin.org/articles/10.3389/frsc.2021.685716/full" target="_blank">Environmental Sustainability</a></li>
+              <li> <a href="https://www.thenationalnews.com/business/technology/2023/09/02/electric-vehicle-makers-to-face-intense-competition-report-warns/"target="_blank">Market Competitiveness</a></li>
+              <li> <a href="https://www.canalys.com/newsroom/global-ev-sales-h1-2023"target="_blank">Global Adoption and Market Growth</a></li>
+              <li><a href="https://www.erm.com/insights/building-the-connected-ev-circularity-collaboration-competitiveness/" target="_blank">Collaborations and Partnerships</a></li>
+              <li><a href="https://greeningthegrid.org/electric-vehicle-toolkit/topics-resources/policy-and-regulation" target="_blank">Policy Support and Regulations</a></li>
+          </ol>
+
+          ★ Watch the video below to know why the EVs are not yet ready to be an efficient future in the society:
+          <div class="vide Tiago" style="text-align: center;">
+            <iframe width="500" height="255" src="https://www.youtube.com/embed/03-cF_ozoQs?s" frameborder="0" allowfullscreen ></iframe>
+            <figcaption>Here Is Why Electric Cars Are Not The Future!</figcaption>
+        </div>
+
+      </p>
+  </section>
+  <section id="section9">
+    <h2>Conclusion</h2>
+    <p>
+        <li>In conclusion, the exploration of electric vehicles (EVs) on this website underscores the transformative potential of this technology in shaping the future of transportation. The rapid advancements in battery technology, coupled with growing environmental awareness, are driving a shift towards sustainable mobility. Electric vehicles not only offer a cleaner alternative to traditional combustion engines but also contribute significantly to reducing greenhouse gas emissions and dependence on fossil fuels.</li>
+<br>
+        <li>As evidenced by the diverse range of electric models available in the market, from sleek sedans to rugged SUVs, manufacturers are investing heavily in the EV sector. This signals a broader acceptance of electric vehicles as a mainstream option, with continuous improvements in range, charging infrastructure, and affordability.</li>
+<br>
+        <li>The website has provided valuable insights into the benefits of electric vehicles, such as lower operational costs, reduced air pollution, and increased energy efficiency. Additionally, the information on government incentives, charging infrastructure expansion, and global initiatives has highlighted the collective efforts to promote the adoption of electric vehicles on a larger scale.</li>
+<br>
+        <li>While acknowledging the positive strides in the electric vehicle industry, it's important to recognize challenges that still need to be addressed. These include concerns about battery disposal, the environmental impact of raw material extraction for batteries, and the need for further development in charging infrastructure to address range anxiety.</li>
+<br>
+        <li>In essence, the future of transportation appears electric, with ongoing innovations and collaborative efforts towards a more sustainable and eco-friendly automotive landscape. As consumers, policymakers, and industries unite to support the transition to electric vehicles, it is evident that this clean energy revolution will play a pivotal role in shaping a greener and more sustainable future for generations to come.</li>
+    </p>
+    </section>
+
+
+
+        <section id="section11">
+            <h2>Contact </h2>
+        <p style="font-weight: bold;">E-mail : electricvehicles@gmail.com</p>
+        <p style="font-weight: bold;">Phone : +91 8008035703</p>
+        <p style="font-weight: bold;">Instagram : <a href="https://www.instagram.com/electricvehicles.in/">electricvehicles.in</a></p>
+        <p style="font-weight: bold;">Twitter(X) : <a href="https://twitter.com/EVehiclesindia">electricvehicles.in</a></p>
+        <p style="font-weight: bold;">Github : <a href="https://github.com/anoopreddy18">electricvehicles.in</a></p>
+        <p style="font-weight: bold;">Linkedin : <a href="https://www.linkedin.com/in/anoopreddy18/">electricvehicles.in</a></p>
+      </section>
+    </main>
+</body>
+</html>
